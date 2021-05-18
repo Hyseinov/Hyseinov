@@ -1,5 +1,5 @@
 from django.contrib import admin
-from dz1.models import *
+from dj1.models import *
 
 # Register your models here.
 

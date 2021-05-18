@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
                 ('title', models.CharField(max_length=100)),
                 ('description', models.TextField()),
                 ('price', models.IntegerField(default=0)),
-                ('category', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='dz1.category')),
+                ('category', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='dj1.category')),
             ],
         ),
         migrations.CreateModel(
@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('text', models.TextField()),
-                ('product', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='dz1.product')),
+                ('product', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='dj1.product')),
             ],
         ),
     ]
