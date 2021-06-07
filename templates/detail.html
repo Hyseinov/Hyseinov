@@ -5,9 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-    <p>Название продукта: {{ product.title }}</p>
-    <p>Описание: {{ product.description }}</p>
-    <p>Цена: {{ product.price }}</p>
+<p>Название продукта: {{ product.title }}</p>
+<p>Описание: {{ product.description }}</p>
+<p>Цена: {{ product.price }}</p>
+<p>Количество отзывов: {{ count_rew }}</p>
+
+<h3>отзыв:</h3>
+{% for i in review %}
+    {{ i.text }}
+    <hr>
+{% endfor %}
 
 </body>
 </html>
